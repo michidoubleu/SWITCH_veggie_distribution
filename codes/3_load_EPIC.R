@@ -26,7 +26,6 @@ final_yields <- EPIC_mapping %>% full_join(YLDG_data %>% dplyr::select(SimUID, S
 final_yields.simu <-  final_yields %>% left_join(eurostat_GLOBIOM_mapping2) %>% ungroup() %>% group_by(simuID, SYS, GLOBIOM) %>%  summarise(YLD=mean(YLD, na.rm=T), IRGA=mean(IRGA, na.rm=T)) %>% drop_na()
 
 
-#
 # temp.SimU.shp <- temp.SimU.shp %>% left_join(final_yields.simu %>% filter(GLOBIOM=="CaBr"))
 # library(ggplot2)
 # library(sf)

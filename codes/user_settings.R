@@ -1,7 +1,9 @@
 ###### user settings for veggy dist
 
+gms.label <- "vegetables"
 input.path <- "P:/globiom/Data/Aggregation/Collected_input_MW"
-
+cutoff <- 0.001 ### minimum smallest area in output
+round.digits <- 3
 
 european_countries <- c(
 "Austria", "Belgium",  "BosniaHerzg",  "Bulgaria", "Croatia", "CzechRep",
